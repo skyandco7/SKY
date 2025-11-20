@@ -1,0 +1,134 @@
+.contact-content-full {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-content-full h3 {
+  font-family: var(--font-heading);
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: var(--text-primary);
+  text-align: center;
+}
+
+.contact-description {
+  font-size: 18px;
+  line-height: 1.8;
+  color: var(--text-secondary);
+  margin-bottom: 60px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  text-align: center;
+}
+
+.contact-icon {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 10px;
+  color: var(--neon-blue);
+  flex-shrink: 0;
+}
+
+.contact-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.contact-details {
+  text-align: center;
+}
+
+.contact-details h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--text-primary);
+}
+
+.contact-details a {
+  color: var(--neon-blue);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.contact-details a:hover {
+  text-shadow: 0 0 10px var(--neon-blue);
+}
+
+.contact-details p {
+  margin: 0;
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.social-links-large {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-link-large {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 12px;
+  color: var(--text-secondary);
+  transition: all 0.3s ease;
+  font-size: 28px;
+}
+
+.social-link-large:hover {
+  background: rgba(0, 243, 255, 0.1);
+  border-color: var(--neon-blue);
+  color: var(--neon-blue);
+  box-shadow: 0 0 20px rgba(0, 243, 255, 0.3);
+}
+
+@media (max-width: 768px) {
+  .contact-content-full h3 {
+    font-size: 28px;
+  }
+  
+  .contact-description {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+  
+  .contact-items {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .social-link-large {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+  }
+}

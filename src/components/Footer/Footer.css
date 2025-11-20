@@ -1,0 +1,142 @@
+.footer {
+  background: var(--bg-secondary);
+  border-top: 1px solid var(--glass-border);
+  padding: 60px 0 30px;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 60px;
+  margin-bottom: 40px;
+  align-items: start;
+  justify-items: start;
+}
+
+.footer-brand {
+  max-width: 400px;
+  text-align: left;
+}
+
+.footer-logo {
+  font-family: var(--font-heading);
+  font-size: 36px;
+  font-weight: 900;
+  letter-spacing: 4px;
+  background: linear-gradient(135deg, var(--neon-blue), var(--neon-purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 10px;
+}
+
+.footer-tagline {
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: var(--text-secondary);
+  margin-bottom: 15px;
+}
+
+.footer-desc {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+}
+
+.footer-social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 24px;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 8px;
+  color: var(--neon-blue);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.footer-social-link:hover {
+  background: rgba(0, 243, 255, 0.1);
+  border-color: var(--neon-blue);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 20px rgba(0, 243, 255, 0.2);
+}
+
+.footer-social-link svg {
+  font-size: 20px;
+}
+
+.footer-links,
+.footer-services {
+  text-align: left;
+  width: 100%;
+}
+
+.footer-links h4,
+.footer-services h4 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--text-primary);
+  letter-spacing: 2px;
+  text-align: left;
+}
+
+.footer-links ul,
+.footer-services ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-links a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: var(--neon-blue);
+  padding-left: 5px;
+}
+
+.footer-services li {
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
+.footer-bottom {
+  padding-top: 30px;
+  border-top: 1px solid var(--glass-border);
+  text-align: center;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin: 5px 0;
+}
+
+@media (max-width: 1024px) {
+  .footer-content {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
