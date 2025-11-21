@@ -15,7 +15,7 @@ const Contact = () => {
         </svg>
       ),
       title: 'Email',
-      content: <a href="mailto:hello@skyvibecoders.com">hello@skyvibecoders.com</a>
+      content: <a href="mailto:hello@skyvibecoders.com">skyandco7@gmail.com</a>
     },
     {
       icon: (
